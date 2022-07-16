@@ -245,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 10px;
     position: relative;
     display: inline-block;
+    overflow: hidden;
     border-radius: 5px;
 }
 
@@ -261,21 +262,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider__img-1 {
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, .1) 70%, rgba(0, 0, 0, .8)), url(../img/slider1.jpg);
-    
 }
 
 .slider__img-2 {
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, .1) 70%, rgba(0, 0, 0, .8)), url(../img/slider2.jpg);
 }
 
 .slider__img-3 {
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, .1) 70%, rgba(0, 0, 0, .8)), url(../img/slider3.jpg);
 }
 
 .slider__img-4 {
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, .1) 70%, rgba(0, 0, 0, .8)), url(../img/slider4.jpg);
 }
+
+.slider:hover .slider__img-1, .slider:hover .slider__img-2, .slider:hover .slider__img-3, .slider:hover .slider__img-4  {
+  transform: scale(1.2);
+  transition: all .5s;
+  border-radius: 5px;
+}
+
 
 .item__title {
     max-width: 210px;
