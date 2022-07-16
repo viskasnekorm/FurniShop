@@ -6,3 +6,9 @@ $(function(){
         arrows: false,
     });
 });
+
+$(function(){
+    $('.cards').slick({
+        rows: 2,
+    });
+});
